@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectTotalQTY, setOpenCart } from '../app/CartSlice.js';
+import { selectTotalQuantity, setOpenCart } from '../app/CartSlice.js';
 
 import { HeartIcon, MagnifyingGlassIcon, ShoppingBagIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/logo.png';
@@ -8,7 +8,7 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
     const dispatch = useDispatch();
-    const totalQTY = useSelector(selectTotalQTY);
+    const totalQTY = useSelector(selectTotalQuantity);
 
     const onCartToggle = () => {
         dispatch(setOpenCart({

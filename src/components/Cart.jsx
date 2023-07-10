@@ -4,7 +4,7 @@ import {
   selectCartItems,
   selectCartState,
   selectTotalAmount,
-  selectTotalQTY,
+  selectTotalQuantity,
   setClearCartItems,
   setCloseCart,
   setGetTotals
@@ -18,7 +18,7 @@ const Cart = () => {
   const ifCartState = useSelector(selectCartState);
   const cartItems = useSelector(selectCartItems);
   const totalAmount = useSelector(selectTotalAmount);
-  const totalQTY = useSelector(selectTotalQTY);
+  const totalQTY = useSelector(selectTotalQuantity);
   
   // console.log(cartItems)
 
