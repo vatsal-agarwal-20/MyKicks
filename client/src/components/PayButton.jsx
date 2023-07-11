@@ -1,6 +1,6 @@
 import React from 'react'
 
-const url = `${import.meta.env.VITE_BACKEND_URL}/api`;
+const url = "https://mykicks.onrender.com/api";
 const PayButton = ({ cartItems }) => {
 
     const handleCheckout = async (e) => {

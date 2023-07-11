@@ -5,7 +5,6 @@ import NoPage from './components/NoPage';
 import CheckoutSuccess from './components/CheckoutSuccess';
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
