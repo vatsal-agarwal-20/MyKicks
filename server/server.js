@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/api/stripe", stripe);
 
-const PORT = 5000
+const PORT = 5000;
 app.listen(PORT, () =>
     console.log(`Server running at port: ${PORT}`)
 )
