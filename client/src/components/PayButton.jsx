@@ -1,6 +1,6 @@
-import axios from 'axios'
+import React from 'react'
 
-const url = "http://localhost:5000/api";
+const url = `${import.meta.env.VITE_BACKEND_URL}/api`;
 const PayButton = ({ cartItems }) => {
 
     const handleCheckout = async (e) => {
