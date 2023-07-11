@@ -1,6 +1,7 @@
 import React from 'react'
 
 const url = "https://mykicks.onrender.com/api";
+// const url2 = "http://localhost:5000/api";
 const PayButton = ({ cartItems }) => {
 
     const handleCheckout = async (e) => {
