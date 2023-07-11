@@ -87,10 +87,9 @@ router.post("/create-checkout-session", async (req, res) => {
         //     },
         //   ],
         mode: "payment",
-        success_url: `${process.env.CLIENT_URL}/checkout-success`,
+        success_url: `${process.env.CLIENT_URL}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${process.env.CLIENT_URL}/`,
     });
-
     // res.redirect(303, session.url);
     res.send({ url: session.url });
 });
