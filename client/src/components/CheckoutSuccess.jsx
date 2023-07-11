@@ -1,10 +1,14 @@
 import React from 'react'
 import logo from '../assets/logo.png';
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import {setClearCartItems} from '../app/CartSlice'
 
 const CheckoutSuccess = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleClick = (e) => {
+    dispatch(setClearCartItems());
     navigate("/");
   }
   return (
